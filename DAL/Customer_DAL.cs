@@ -35,6 +35,7 @@ namespace DAL
             {
                 if(custList[x].ID_NUM == num)
                 {
+                    Console.WriteLine(1);
                     custList.RemoveAt(x);
                     break;
                 }

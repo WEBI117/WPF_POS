@@ -38,7 +38,8 @@ namespace BAL
             }
             if (check == 0)
             {
-                clist.Add(new Customer(id, name, age, phone));
+                DAL_item.addCust(id, name, age, phone);
+                this.setList();
             }
         }
 

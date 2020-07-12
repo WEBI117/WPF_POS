@@ -27,13 +27,29 @@ namespace POS
     {
         customer_List myobj = new customer_List();
 
-        public void deletehandler()
+        public void removeHandle(object sender, RoutedEventArgs e)
         {
+            if (lbox.SelectedItem == null)
+            {
+                MessageBox.Show("No Customer Selected.");
+            }
+            else if(myobj.clist.Count != 0)
+            {
+                Customer temp = lbox.SelectedItem as Customer;
+                int num = temp.ID_NUM;
+                myobj.delete(num);
+                lbox.ItemsSource = myobj.clist;
+            }
+            else
+            {
+                return;
+            }
         }
         public void addHandle(object sender, RoutedEventArgs e)
         {
-            CustomerEnteryWindow enterypage = new CustomerEnteryWindow(this.myobj);
+            CustomerEnteryWindow enterypage = new CustomerEnteryWindow(this.myobj, this.lbox);
             enterypage.Show();
+            lbox.ItemsSource = this.myobj.clist;
         }
         public void orderHandle(object sender, RoutedEventArgs e)
         {
@@ -46,7 +62,7 @@ namespace POS
         {
             InitializeComponent();
             myobj.add(15, "spooky", 15, 12345);
-            myobj.add(14, "scary", 15, 12345);
+            myobj.add(14, "scary", 12, 1234);
             myobj.add(13, "sneaky", 15, 12345);
 
             lbox.ItemsSource = myobj.clist;

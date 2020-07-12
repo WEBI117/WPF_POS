@@ -24,13 +24,13 @@ namespace POS
     /// </summary>
     public partial class CustomerEnteryWindow : Window
     {
-        public Customer LocalCustomer;
         public int id;
         public string name;
         public  int age;
         public  int num;
         public int check = 0;
         public customer_List mydata;
+        public ListBox lbox;
 
         public void submitbuttonHandle(object sender, RoutedEventArgs e)
         {
@@ -42,6 +42,7 @@ namespace POS
                 this.num = Int32.Parse(Phoneentry.Text);
 
                 mydata.add(id, name, age, num);
+                lbox.ItemsSource = mydata.clist;
                 this.Close();
             }
             catch(Exception err)
@@ -51,10 +52,11 @@ namespace POS
             }
         }
 
-        public CustomerEnteryWindow(customer_List data)
+        public CustomerEnteryWindow(customer_List data, ListBox l)
         {
             InitializeComponent();
             mydata = data;
+            lbox = l;
         }
     }
 }

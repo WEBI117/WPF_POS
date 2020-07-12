@@ -14,7 +14,7 @@
             <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
         <Grid Margin="10,10,10,10" >
-            <ListBox Name="lbox">
+            <ListBox Name="lbox" ItemsSource="{Binding Path=myobj.clist}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Grid Margin="0,2" HorizontalAlignment="Stretch">
@@ -41,7 +41,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Button Click="addHandle">ADD</Button>
-            <Button Grid.Row="1">REMOVE</Button>
+            <Button Grid.Row="1" Click="removeHandle">REMOVE</Button>
             <Button Grid.Row="2" Click="orderHandle">PLACE ORDER</Button>
             <Button Grid.Row="3">VIEW ORDERS</Button>
         </Grid>
