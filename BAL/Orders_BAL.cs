@@ -11,18 +11,18 @@ namespace BAL
 {
     public class Order_List
     {
-        private Order_DAL list;
+        private Order_DAL DAL_item;
         public  ObservableCollection<Order> olist;
 
         public Order_List()
         {
-            list= new Order_DAL();
+            DAL_item= new Order_DAL();
             this.setList();
         }
 
         public void setList()
         {
-            olist = new ObservableCollection<Order>(list.orderList);
+            olist = new ObservableCollection<Order>(DAL_item.orderList);
         }
 
         public void add(int onum, int cid, int amnt)
@@ -43,13 +43,7 @@ namespace BAL
 
         public void delete(int id)
         {
-            for (int x = 0; x < list.orderList.Count; x++)
-            {
-                if (list.orderList[x].Order_Num == id)
-                {
-                    list.orderList.Remove(list.orderList[x]);
-                }
-            }
+            this.DAL_item.deleteItem(id);
             this.setList();
         }
 

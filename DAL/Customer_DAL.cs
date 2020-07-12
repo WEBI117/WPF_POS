@@ -28,9 +28,17 @@ namespace DAL
         }
 
         // Delete a customer object from the list based on ID.
-        public void deleteCust(int id)
+        public void deleteCust(int num)
         {
-            Console.WriteLine("deleting customer", id);
+            int size = custList.Count;
+            for (int x = 0; x < size; x++)
+            {
+                if(custList[x].ID_NUM == num)
+                {
+                    custList.RemoveAt(x);
+                    break;
+                }
+            }
         }
     }
 }

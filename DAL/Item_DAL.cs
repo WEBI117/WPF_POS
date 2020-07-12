@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using Models;
@@ -24,7 +25,15 @@ namespace DAL
 
         public void deleteItem(int num)
         {
-            Console.WriteLine("deleting Item Number ", num);
+            int size = itemList.Count;
+            for (int x = 0; x < size; x++)
+            {
+                if(itemList[x].Item_Num == num)
+                {
+                    itemList.RemoveAt(x);
+                    break;
+                }
+            }
         }
     }
 }

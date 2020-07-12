@@ -12,18 +12,18 @@ namespace BAL
 {
     public class customer_List
     {
-        private Customer_DAL list;
+        private Customer_DAL DAL_item;
         public ObservableCollection<Customer> clist;
 
         public customer_List()
         {
-            list= new Customer_DAL();
+            DAL_item= new Customer_DAL();
             this.setList();
         }
 
         public void setList()
         {
-            clist = new ObservableCollection<Customer>(list.custList);
+            clist = new ObservableCollection<Customer>(DAL_item.custList);
         }
 
         public void add(int id, string name, int age, int phone)
@@ -44,13 +44,7 @@ namespace BAL
 
         public void delete(int id)
         {
-            for (int x = 0; x < list.custList.Count; x++)
-            {
-                if (list.custList[x].ID_NUM == id)
-                {
-                    list.custList.Remove(list.custList[x]);
-                }
-            }
+            this.DAL_item.deleteCust(id);
             this.setList();
         }
 

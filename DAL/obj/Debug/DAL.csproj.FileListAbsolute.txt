@@ -7,3 +7,12 @@ D:\C#_Projects\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\C#_Projects\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\C#_Projects\DAL\obj\Debug\DAL.dll
 D:\C#_Projects\DAL\obj\Debug\DAL.pdb
+C:\Users\wahid\OneDrive\Desktop\proj\WPF_POS\DAL\bin\Debug\DAL.dll
+C:\Users\wahid\OneDrive\Desktop\proj\WPF_POS\DAL\bin\Debug\DAL.pdb
+C:\Users\wahid\OneDrive\Desktop\proj\WPF_POS\DAL\bin\Debug\Models.dll
+C:\Users\wahid\OneDrive\Desktop\proj\WPF_POS\DAL\bin\Debug\Models.pdb
+C:\Users\wahid\OneDrive\Desktop\proj\WPF_POS\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\wahid\OneDrive\Desktop\proj\WPF_POS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\wahid\OneDrive\Desktop\proj\WPF_POS\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\wahid\OneDrive\Desktop\proj\WPF_POS\DAL\obj\Debug\DAL.dll
+C:\Users\wahid\OneDrive\Desktop\proj\WPF_POS\DAL\obj\Debug\DAL.pdb

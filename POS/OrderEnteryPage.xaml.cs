@@ -45,18 +45,29 @@ namespace POS_app
                 Console.WriteLine(err);
             }
         }
-        // TODO : FIX for divison by 2 update bug (Probablly due to re-assignment)
+
         public void CLEARButtonhandler(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine(selected.ilist.Count);
-            for(int x = 0; x < selected.ilist.Count; x++)
+            if(selecteditemBox.SelectedItem == null)
             {
-                int num = selected.ilist[x].Item_Num;
+                while(selected.ilist.Count != 0)
+                {
+                    int num = selected.ilist[0].Item_Num;
+                    inventory.updateQuantity(num, 1);
+                    selected.delete(num);
+                }
+                selecteditemBox.ItemsSource = selected.ilist;
+                menubox.ItemsSource = inventory.ilist;
+            }
+            else
+            {
+                item temp = selecteditemBox.SelectedItem as item;
+                int num = temp.Item_Num;
                 inventory.updateQuantity(num, 1);
                 selected.delete(num);
+                selecteditemBox.ItemsSource = selected.ilist;
+                menubox.ItemsSource = inventory.ilist;
             }
-            selecteditemBox.ItemsSource = selected.ilist;
-            menubox.ItemsSource = inventory.ilist;
         }
         public oep(Customer cust)
         {

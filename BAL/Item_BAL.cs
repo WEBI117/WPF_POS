@@ -32,13 +32,7 @@ namespace BAL
         }
         public void delete(int num)
         {
-            for (int x = 0; x < DAL_item.itemList.Count; x++)
-            {
-                if (DAL_item.itemList[x].Item_Num == num)
-                {
-                    DAL_item.itemList.Remove(DAL_item.itemList[x]);
-                }
-            }
+            this.DAL_item.deleteItem(num);
             this.setList();
         }
 

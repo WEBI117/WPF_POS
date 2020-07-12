@@ -24,7 +24,15 @@ namespace DAL
 
         public void deleteItem(int num)
         {
-            Console.WriteLine("deleting Item Number ", num);
+            int size = orderList.Count;
+            for (int x = 0; x < size; x++)
+            {
+                if(orderList[x].Order_Num == num)
+                {
+                    orderList.RemoveAt(x);
+                    break;
+                }
+            }
         }
     }
 }
