@@ -1,0 +1,9 @@
+D:\C#_Projects\DAL\bin\Debug\DAL.dll
+D:\C#_Projects\DAL\bin\Debug\DAL.pdb
+D:\C#_Projects\DAL\bin\Debug\Models.dll
+D:\C#_Projects\DAL\bin\Debug\Models.pdb
+D:\C#_Projects\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\C#_Projects\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\C#_Projects\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\C#_Projects\DAL\obj\Debug\DAL.dll
+D:\C#_Projects\DAL\obj\Debug\DAL.pdb

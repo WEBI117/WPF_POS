@@ -1,0 +1,11 @@
+D:\C#_Projects\BAL\bin\Debug\BAL.dll
+D:\C#_Projects\BAL\bin\Debug\BAL.pdb
+D:\C#_Projects\BAL\bin\Debug\DAL.dll
+D:\C#_Projects\BAL\bin\Debug\Models.dll
+D:\C#_Projects\BAL\bin\Debug\DAL.pdb
+D:\C#_Projects\BAL\bin\Debug\Models.pdb
+D:\C#_Projects\BAL\obj\Debug\BAL.csprojAssemblyReference.cache
+D:\C#_Projects\BAL\obj\Debug\BAL.csproj.CoreCompileInputs.cache
+D:\C#_Projects\BAL\obj\Debug\BAL.csproj.CopyComplete
+D:\C#_Projects\BAL\obj\Debug\BAL.dll
+D:\C#_Projects\BAL\obj\Debug\BAL.pdb
